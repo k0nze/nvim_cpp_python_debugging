@@ -25,6 +25,9 @@ if(GIT_FOUND AND EXISTS "${PROJECT_SOURCE_DIR}/.git")
     endif()
 endif()
 
+# generate debug symbols
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")
+
 # globally enable -fPIC
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
